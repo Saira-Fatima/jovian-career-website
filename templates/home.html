@@ -10,18 +10,26 @@
             height:360px;
             object-fit:cover;
             width:100%;
+            margin-bottom:16px;
           }
         </style>
     </header>
     <body>
+
+        {% include'nav.html' %}
+      <img class="img-fluid" id = "banner" src ="https://jovian-career-website--sairafatima.repl.co/static/banner.jpg"> 
       <div class = "container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>
-      <img class="img-fluid" id = "banner" src ="https://jovian-career-website--sairafatima.repl.co/static/banner.jpg">
-      <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-        <div>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p> </div>
-<div class="text-center">
-<button class="btn btn-primary btn-lg">Contact Us</button></div>
+
+       <h1 class="text-center mt-2 mb-4">{{company_name}} careers</h1>     
+        <div class="row" style="margin-bottom:16px">
+          <div class="col-md-6">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.</p> 
+          </div>
+          <div class="d-none d-md-block col-6">
+        <img src="/static/people.jpg " style="height:320px">
+        </div>
+      </div>
+
       <h2 class="text-center mt-2 mb-4">Job Opening</h2>
 <div>
       
@@ -30,9 +38,9 @@
         {% endfor %}
        </div>
 <div class="text-center">
-<button class="btn btn-primary btn-lg">Contact Us</button>
-<p class="mt-4">Copyright 2022, jovain</p>
+<a href="mailto:hello@jovian.ai?subject=Question%20about%20Job%20Opening&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Question%3A%20%3CEnter%20Question%20here%3E" class="btn btn-primary btn-lg">Contact Us</a>
       </div>
         </div>
+              {% include 'footer.html' %}
     </body>
   </html>
